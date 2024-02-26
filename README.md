@@ -1,0 +1,1 @@
+ORMini is an opensource lite Object-Relational Mapping Framework for Java (Derived from course project)
