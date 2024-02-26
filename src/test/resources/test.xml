@@ -1,0 +1,150 @@
+<ORMini>
+    <sqls>
+        <segments>
+            <segment id="seg1">
+                hi
+            </segment>
+        </segments>
+
+        <statements>
+            <statement id="truncateTest">
+                truncate test;
+            </statement>
+            <statement id="truncateTest2">
+                truncate test2;
+            </statement>
+            <statement id="truncateTest3">
+                truncate test3;
+                truncate test4;
+            </statement>
+            <statement id="truncateReal">
+                truncate website_user cascade;
+                truncate following cascade;
+            </statement>
+        </statements>
+
+        <inserts>
+            <insert id="complexObj">
+                insert into test(id, name, type)
+                values (?, ?, ?)
+            </insert>
+            <insert id="complexObj2">
+                insert into test2(id, test_case)
+                values (?, ?)
+            </insert>
+            <insert id="test3">
+                insert into test3(id, name, for_test2, for_fei)
+                values (?, ?, ?, ?)
+            </insert>
+            <insert id="test3.2">
+                insert into test4(id, array2)
+                values (?, ?)
+            </insert>
+            <insert id="userInfo">
+                insert into website_user(mid, name, sex, birthday, level, coin, sign, password, wechat, qq, identity)
+                values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            </insert>
+            <insert id="follow">
+                insert into following(follower, followee) values (?, ?)
+            </insert>
+        </inserts>
+
+        <!--        <updates>-->
+        <!--            <update id="">-->
+
+        <!--            </update>-->
+        <!--        </updates>-->
+
+                <deletes>
+                    <delete id="follow">
+                        delete
+                        from following
+                        where follower = ?
+                          and followee = ?
+                    </delete>
+                </deletes>
+
+        <queries>
+            <query id="complexObj" pojo="Test.ComplexObj">
+                select id, name, type
+                from test
+            </query>
+            <query id="complexObj1.1" pojo="Test.ComplexObj" collection="array" enumConvert="one begin">
+                select id, name, type
+                from test
+            </query>
+            <query id="complexObj2" pojo="Test.ComplexObj2">
+                select id, test_case
+                from test2
+            </query>
+            <query id="complexObj3" pojo="int" collection="list">
+                select id
+                from test
+            </query>
+            <query id="complexObj4" pojo="int" collection="array">
+                select id
+                from test
+            </query>
+            <query id="complexObj5" pojo="int" collection="single">
+                select id
+                from test
+            </query>
+            <query id="complexObj6" pojo="integer" collection="array">
+                select id
+                from test
+            </query>
+            <query id="complexObj7" pojo="integer" collection="single">
+                select id
+                from test
+                where id = 1000;
+            </query>
+            <mapper id="complexObj8" pojo="Test.ComplexObj">
+                <use query="complexObj"/>
+            </mapper>
+
+            <query id="cp11" pojo="Test.ComplexObj3">
+                select id, name
+                from test3
+                where id = ?
+            </query>
+            <query id="cp12" pojo="Test.ComplexObj3">
+                select for_test2,for_fei
+                from test3
+                where id = ?
+            </query>
+            <query id="cp13" pojo="int" collection="array">
+                select array2 as "array"
+                from test4
+                where id = ?
+            </query>
+            <mapper id="complexObj9" pojo="Test.ComplexObj3">
+                <use query="cp11"/><!--id/name-->
+                <use query="cp12">
+                    <result property="test2" column="for_test2"/>
+                    <result property="fei" column="for_fei"/>
+                </use>
+                <use query="cp13" field="array" collection="array"/>
+            </mapper>
+            <query id="complexObj10" pojo="java.lang.Integer" collection="set">
+                select id
+                from test
+            </query>
+
+            <!--real test-->
+            <query id="userMainInfo" pojo="Test.UserInfoResp">
+                select mid, coin
+                from website_user
+                where mid = ?
+            </query>
+            <query id="following" pojo="long" collection="array">
+                select followee
+                from following
+                where follower = ?
+            </query>
+            <mapper id="real" pojo="Test.UserInfoResp">
+                <use query="userMainInfo"/>
+                <use query="following" field="following"/>
+            </mapper>
+        </queries>
+    </sqls>
+</ORMini>

@@ -1,0 +1,56 @@
+<ORMini>
+    <sqls>
+        <segments>
+            <segement id="">
+
+            </segement>
+        </segments>
+
+        <statements>
+            <statement id="">
+
+            </statement>
+        </statements>
+
+        <inserts>
+            <insert id="">
+
+            </insert>
+        </inserts>
+
+        <updates>
+            <update id="">
+
+            </update>
+        </updates>
+
+        <deletes>
+            <delete id="">
+
+            </delete>
+        </deletes>
+
+        <queries>
+            <!--if pojo is defined as a primitive type(not object),then column requires to be single,
+            map mode will be automatically change to "single column"-->
+            <query id="" mapMode="" collection="" pojo="" enumConvert="" enumNullable="">
+
+            </query>
+
+            <mapper id="" pojo=""><!--在一个对象中,mapper只支持single模式-->
+                <!--自动把这个对象中的部分字段用这个query的结果填充,也就是将前面的query中的pojo和collection替换为mapper定义的-->
+                <use query="" mapMode="" enumConvert="" enumNullable=""/>
+                <!--将query结果填充至field这一个字段-->
+                <use query="" field="" mapMode="" collection="" pojo="" enumConvert="" enumNullable=""/>
+                <!--将前面的query中的pojo替换为mapper定义的,同时用定义的映射方式映射-->
+                <!--注意use语句的待填参数必须相同-->
+                <use query="" enumConvert="" enumNullable="">
+                    <!--一列可以映射到多个属性，但每个属性只能由一列映射-->
+                    <result property="" column=""/>
+                    <result property="" column=""/>
+                </use>
+            </mapper>
+
+        </queries>
+    </sqls>
+</ORMini>

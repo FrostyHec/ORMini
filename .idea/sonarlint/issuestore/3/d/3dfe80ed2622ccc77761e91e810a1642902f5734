@@ -1,0 +1,37 @@
+
+[	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(×‚´¼
+f
+java:S1104"PMake impl a static final constant or non-public and provide accessors if needed.(âì‚Á
+j
+java:S1104H"TMake settings a static final constant or non-public and provide accessors if needed.(ËªÕ
+h
+java:S1104I"SMake xmlPath a static final constant or non-public and provide accessors if needed.(…¨¨)
+r
+java:S1104N"WMake sessionType a static final constant or non-public and provide accessors if needed.(î¿ÅÕıÿÿÿÿ
+m
+java:S1104O"RMake mapper a static final constant or non-public and provide accessors if needed.(ÙÒ©Àûÿÿÿÿ
+s
+java:S1104T"XMake fieldMapMode a static final constant or non-public and provide accessors if needed.(´ÍûÎıÿÿÿÿ
+r
+java:S1104U"]Make defaultCollection a static final constant or non-public and provide accessors if needed.(†ÿ‘
+j
+java:S1104V"TMake typeEnum a static final constant or non-public and provide accessors if needed.(€´½±
+t
+java:S1104Z"^Make defaultEnumConvert a static final constant or non-public and provide accessors if needed.(æ´¸ß
+z
+java:S1104["_Make defaultEnumNullable a static final constant or non-public and provide accessors if needed.(øâéüÿÿÿÿ
+f
+java:S1104_"PMake file a static final constant or non-public and provide accessors if needed.(¿ÑÂ²
+f
+java:S1104d"PMake name a static final constant or non-public and provide accessors if needed.( şÍ¾
+i
+java:S1104e"SMake sqlPath a static final constant or non-public and provide accessors if needed.(Ïš×¦
+i
+java:S1104l"SMake sqlPath a static final constant or non-public and provide accessors if needed.(Ïš×¦
+@
+java:S1444"*Make this "public static impl" field final(âì‚Á
+o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(¼Îªõ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(¼Îªõ
+B
+java:S1125B"'Remove the unnecessary boolean literal.(¼…˜ªûÿÿÿÿ

@@ -1,0 +1,13 @@
+
+q
+java:S1104"TMake segments a static final constant or non-public and provide accessors if needed.(ëµË§8Ï‹¥§Ş1
+s
+java:S1104"VMake statements a static final constant or non-public and provide accessors if needed.(¢“•ş8Ğ‹¥§Ş1
+p
+java:S1104"SMake inserts a static final constant or non-public and provide accessors if needed.(õüÕ8Ğ‹¥§Ş1
+p
+java:S1104"SMake updates a static final constant or non-public and provide accessors if needed.(ğÛ´8Ğ‹¥§Ş1
+u
+java:S1104"SMake deletes a static final constant or non-public and provide accessors if needed.(¦©âÙùÿÿÿÿ8Ğ‹¥§Ş1
+p
+java:S1104"SMake queries a static final constant or non-public and provide accessors if needed.(îßûŞ8Ğ‹¥§Ş1

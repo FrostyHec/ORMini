@@ -1,0 +1,15 @@
+<ORMini>
+    <sqls>
+        <statements>
+            <statement id="truncateBT">
+                truncate benchmarktest
+            </statement>
+        </statements>
+        <inserts>
+            <insert id="student">
+                insert into benchmarktest(studentid, name)
+                values (?, ?)
+            </insert>
+        </inserts>
+    </sqls>
+</ORMini>

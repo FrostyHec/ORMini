@@ -1,0 +1,19 @@
+
+o
+java:S1192m"TDefine a constant instead of duplicating this literal "SQL no found, name:" 5 times.(¯²æåşÿÿÿÿ
+T
+java:S1163¶"=Refactor this code to not throw exceptions in finally blocks.(ïÎ®
+K
+java:S1143¶"4Remove this throw statement from this finally block.(ïÎ®
+r
+java:S2095Ş"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¸¥¯Íúÿÿÿÿ8·Š¥§Ş1
+_
+java:S2095í"HUse try-with-resources or close this "Connection" in a "finally" clause.(Úàç
+T
+java:S5993"9Change the visibility of this constructor to "protected".(·‡çöøÿÿÿÿ
+V	java:S125n"<This block of commented-out lines of code should be removed.(áğŸæÿÿÿÿÿ
+V	java:S125v"<This block of commented-out lines of code should be removed.(êÍ÷Üÿÿÿÿÿ
+Q	java:S125~"<This block of commented-out lines of code should be removed.(×Ëÿ…
+W	java:S125”"<This block of commented-out lines of code should be removed.(ÿÙøøÿÿÿÿ
+S
+java:S2209­"5Change this instance-reference to a static reference.(êœÃğ8®‹¥§Ş1
