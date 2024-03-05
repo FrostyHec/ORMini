@@ -24,6 +24,7 @@ public class DatabaseTest {
         }
     }
 
+
     @Test
     public void xmlTest() throws Exception {
         connect("test");

@@ -1,12 +1,12 @@
 # a basic settings for MyORM 0.0.1
-settings:
-  sessionType: basic #basic or advanced
-  mapper:
-    fieldMapMode: camel #exact,camel,pascal, we only implemented camel
-    defaultCollection: single #list,array,single(if not defined, it must be a single object)
-    typeEnum:
-      defaultEnumConvert: one begin #get enum by name or ordinal
-      defaultEnumNullable: true
+#settings:
+#  sessionType: basic #basic or advanced
+#  mapper:
+#    fieldMapMode: camel #exact,camel,pascal, we only implemented camel
+#    defaultCollection: single #list,array,single(if not defined, its arraylist)
+#    typeEnum:
+#      defaultEnumConvert: one begin #get enum by name or ordinal
+#      defaultEnumNullable: true
 xmlPath:
   file:
     - name: "user"
